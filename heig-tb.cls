@@ -106,7 +106,7 @@
 }
 
 \DeclareOption{mi}{
-  \def\@orientation{Mécatronique}
+  \def\@orientation{Robotique et conception microtechnique}
   \def\@department{TIN}
   \def\@faculty{Microtechniques}
   \def\@field{Ingénierie}

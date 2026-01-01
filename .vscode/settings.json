@@ -5,4 +5,5 @@
     "latex-workshop.view.pdf.viewer": "browser",
     "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.latex.clean.command": "make clean",
+    "makefile.configureOnOpen": false,
 }
