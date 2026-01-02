@@ -1,0 +1,90 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EQUATIONS %%%%%%
+
+- 1 équation sur plusieurs lignes :
+\begin{equation} \label{eq:1}
+    \begin{split}
+        X & = 2 + 3     \\
+          & = %
+    \end{split}
+\end{equation}
+
+
+- Sous-équations :
+\begin{subequations}
+    \begin{align}
+        X &= 1 \\[1em]
+        Y &= 2 \\[1em]
+	Z &= 3 
+    \end{align}
+\end{subequations}
+
+
+- équation encadrée:
+\begin{equation}
+    \begin{ceqn}
+        \fbox{$y = mx+h$}
+        \label{eq:1}
+    \end{ceqn}
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FIGURES %%%%%%
+
+- Figures (.drawio, .py, .png, .svg) :
+\fig[H, width=0.8\textwidth, short=Légende courte dans la table]{Légende longue sous la figure}{sequence.drawio}
+
+
+- Extrait de code dans du texte :
+\mintinline{latex}{\fig[short=Légende courte]{Légende longue}{fichier}}.
+
+
+- Extrait de code dans du texte, encadré :
+\begin{minted}{python}
+def hello_world():
+print("Hello, world!")
+\end{minted}
+
+
+- Extrait de code :
+\begin{listing}[ht]
+    \inputminted{python/c/latex/...}{assets/figures/bode.py}
+    \caption{Génération d'un diagramme de Bode \label{python}}
+\end{listing}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXTE %%%%%%
+
+- Utilisation d'un acronyme : \newacronym{gcd}{GCD}{Greatest Common Divisor}
+\acrlong{} = Greatest Common Divisor
+\acrshort{} = GCD
+\acrfull{} = Least Common Multiple (LCM)
+
+
+- Utilisation d'un mot du glossaire :
+\Gls{heig-vd}
+
+
+- Ajout à l'index. Le mot n'apparait pas dans le texte :
+\index{Mot magique}
+
+
+- Note marginale (sur le côté du texte) :
+\maraja{Une jolie note sur le côté}
+
+
+- Ecrire du texte en police "code" :
+\verb!\tikz\randuck!
+Ou
+\texttt{siunitx}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DIVERS %%%%%%
+
+- Ecrire comme une touche de clavier :
+\keystroke{esc}
+
+- Boîtes colorées (XXX = note, info, tip, succès, warning, important, hint, bug, example:
+\begin{callout}[callout XXX]
+    Le superbe texte
+\end{callout}
+
