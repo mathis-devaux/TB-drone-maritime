@@ -300,6 +300,10 @@
 
 % Gestion des unités SI
 \RequirePackage{siunitx}
+\DeclareSIUnit{\kmh}{\km\per\hour}
+\DeclareSIUnit{\vit}{\m\per\s}
+\DeclareSIUnit{\acc}{\m\per\s\squared}
+\DeclareSIUnit{\New}{\kg\m\per\s\squared}
 
 % Coloration syntaxique du code source avec Python
 % Nécessite la compilation avec --shell-escape
@@ -548,6 +552,39 @@
 \def\pex{p.~ex.~}
 \def\cad{c.-à-d.~}
 \def\cf{cf.~}
+
+%%%%%%%%%%%%%%%%%%%%%%%% MY FUNCTIONS %%%%%%%%%%%%%%%%%%%%%%%%
+\def\etc{~\textit{etc.}\ }
+\def\ie{~\textit{i.e.}\ }
+\def\nb{~\textit{N.B.}\ }
+
+\newcommand*\figref[1]{\textsc{Fig.}~\ref{#1}}
+\newcommand*\tabref[1]{\textsc{Tab.}~\ref{#1}}
+
+%%% Brackets
+\newcommand*\ea[1]{\left\{ #1 \right\}}
+\newcommand*\ep[1]{\left( #1 \right)}
+\newcommand*\ec[1]{\left[ #1 \right]}
+\newcommand*\abs[1]{\left| #1 \right|}
+%%% Operators
+\newcommand*\dsum[1]{\sum_{#1}}
+\newcommand*\ud{\mathrm{d}}
+\newcommand*\dd[3][{}]{\frac{\ud^{#1} #2}{\ud #3^{#1}}}
+\newcommand*\pdd[3][{}]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}
+%%% Trigonometry
+\RenewDocumentCommand{\sin}{om}{ \,\mathrm{sin}\IfValueT{#1}{^{#1}}\ep{#2}}
+\RenewDocumentCommand{\cos}{om}{ \,\mathrm{cos}\IfValueT{#1}{^{#1}}\ep{#2}}
+\RenewDocumentCommand{\tan}{om}{ \,\mathrm{tan}\IfValueT{#1}{^{#1}}\ep{#2}}
+\RenewDocumentCommand{\cot}{om}{ \,\mathrm{cot}\IfValueT{#1}{^{#1}}\ep{#2}}
+\NewDocumentCommand{\asin}{om}{\,\mathrm{arcsin}\IfValueT{#1}{^{#1}}\ep{#2}}
+\NewDocumentCommand{\acos}{om}{\,\mathrm{arccos}\IfValueT{#1}{^{#1}}\ep{#2}}
+\NewDocumentCommand{\atan}{om}{\,\mathrm{arctan}\IfValueT{#1}{^{#1}}\ep{#2}}
+\NewDocumentCommand{\acot}{om}{\,\mathrm{arccot}\IfValueT{#1}{^{#1}}\ep{#2}}
+\RenewDocumentCommand{\exp}{m}{\,\mathrm{e}^{#1}}
+\NewDocumentCommand{\dexp}{m}{\,\mathrm{exp}\ep{#1}}
+\RenewDocumentCommand{\ln}{m}{\,\mathrm{ln}\ep{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Keystroke command
 \newcommand*\keystroke[1]{%
