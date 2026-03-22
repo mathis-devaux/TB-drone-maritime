@@ -1,23 +1,59 @@
 \chapter{Introduction}
 
-Quel est le problème à résoudre ? Pourquoi y a-t-il un problème ? Quelle est la solution envisagée ? Pourquoi est-ce que la solution envisagée est meilleure que l'état de l'art ?
+\textcolor{gray}{Quel est le problème à résoudre ? Pourquoi y a-t-il un problème ? Quelle est la solution envisagée ? Pourquoi est-ce que la solution envisagée est meilleure que l'état de l'art ???}
 
-En bref, on vous demande d'introduire votre travail, l'idée de départ et les objectifs attendus. Le lecteur qui découvrirait votre projet au travers de cette introduction devrait ainsi être capable d'en comprendre le cadre, l'idée générale et les aboutissants du projet.
+\textcolor{gray}{En bref, on vous demande d'introduire votre travail, l'idée de départ et les objectifs attendus. Le lecteur qui découvrirait votre projet au travers de cette introduction devrait ainsi être capable d'en comprendre le cadre, l'idée générale et les aboutissants du projet.}
 
 \section{Contexte}
 
-Enjeux, objetifs généraux et but
+\textcolor{gray}{Enjeux, objetifs généraux et but}
+
+Le but de ce projet est de créer un drone maritime autonome pouvant être équipé d’appareils de mesures. Celui-ci pourrait servir, par exemple, à des mesures de bathymétrie sur des lacs d’accumulation de barrage.
+
+Le drone sera constitué d’un catamaran qui pourra se déplacer de manière autonome sur un parcours pré-établit ou grâce à une télécommande manuelle.
+
+Suite à des TB de plusieurs étudiants d'années précedentes, l’institut REDS dispose d’une maquette de bateau permettant un déplacement autonome et le suivi d’un parcours prédéfini. Celle-ci comprend toute l’électronique et une commande embarquée permettant le contrôle et la régulation de trajectoire pour un bateau.
+
+L’objectif de ce travail est de transposer cette commande embarquée sur un catamaran à taille réelle qui sera designer, construit et testé durant ce projet.
 
 \section{Problématique}
 
-La problématique constitue le cœur de l'introduction et représente le point de départ de votre réflexion. Elle doit être clairement définie afin de présenter de manière explicite le problème que vous souhaitez résoudre. Une problématique bien formulée permet au lecteur de comprendre les enjeux du projet, le contexte dans lequel il s'inscrit et les raisons pour lesquelles cette question mérite d'être traitée.
+\textcolor{gray}{La problématique constitue le cœur de l'introduction et représente le point de départ de votre réflexion. Elle doit être clairement définie afin de présenter de manière explicite le problème que vous souhaitez résoudre. Une problématique bien formulée permet au lecteur de comprendre les enjeux du projet, le contexte dans lequel il s'inscrit et les raisons pour lesquelles cette question mérite d'être traitée.}
 
-Il ne s'agit pas seulement d'exposer un sujet, mais d'identifier une difficulté spécifique, un manque ou un besoin auquel votre projet apporte une réponse. Vous devez également souligner la pertinence de votre démarche : pourquoi ce problème est-il important ? Quelle valeur ajoutée votre travail est-il susceptible d'apporter ? En clarifiant ces points, vous démontrerez la légitimité et l'intérêt de votre projet.
+\textcolor{gray}{Il ne s'agit pas seulement d'exposer un sujet, mais d'identifier une difficulté spécifique, un manque ou un besoin auquel votre projet apporte une réponse. Vous devez également souligner la pertinence de votre démarche : pourquoi ce problème est-il important ? Quelle valeur ajoutée votre travail est-il susceptible d'apporter ? En clarifiant ces points, vous démontrerez la légitimité et l'intérêt de votre projet.}
+
+
 
 \section{Objectifs}
 
-Objectifs précis SMART (Spécifique, Mesurable, Atteignable, Réaliste, Temporellement défini)
+\textcolor{gray}{Objectifs précis SMART (Spécifique, Mesurable, Atteignable, Réaliste, Temporellement défini)}
+
+
+Voici les objectifs principaux avec des sous-objectifs associés :
+\begin{enumerate}
+    \item Définir le profil de mission visé et le cahier des charge principal du bateau et de ses sous-systèmes.
+    \begin{itemize}
+        \item Receuillir les besoins et le utilisations possibles du drone.
+        \item Analyser les conditions de navigation dans les zones ciblées (longueur des vagues, vents, \dots).
+        \item Définir les contraintes mécaniques, électriques et logicielles du bateau liées à la navigation et aux appareils de mesures.
+    \end{itemize}
+    \item Réaliser un bateau bien contrôlable et adapté à la mission (positionnement adapté des moteurs, gouvernails, dérive faible, \dots).
+    \begin{itemize}
+        \item Choisir les dimensions du bateau et la forme des coques pour répondre aux besoins.
+        \item Choisir le type de propulsion (une hélice, 2 hélices différentielles, jetboats, \dots).
+        \item Choisir la direction en conséquence (gouvernails, direction différentielle, \dots).
+    \end{itemize}
+    \item Base hardware robuste et démontable (interfaces mécaniques et électriques facilement démontables, électronique adaptée, ergonomie, intégration GNSS avec 2 antennes, \dots)
+    \begin{itemize}
+        \item Réaliser une structure mécanique simple, robuste et facile d'utilisation.
+        \item Adapter l'électronique embarquée de la maquette pour l'alimentation des moteur et le contrôle de la navigation.
+    \end{itemize}
+    \item Adaptation / tuning du logiciel de contrôle de la navigation autonome pour le catamaran conçu (régulation, \dots) permettant de répondre à des missions sur un plan d’eau dont la bathymétrie.
+    \begin{itemize}
+        \item
+    \end{itemize}
+\end{enumerate}
 
 \section{Méthodologie}
 
-Vous devez justifier chacune de vos décisions : pourquoi avez-vous opté pour une telle approche plutôt qu'une autre ? Quels sont les avantages de cette méthode par rapport aux alternatives disponibles ? Cette section permet également de présenter les critères de sélection des outils, les méthodes d'analyse utilisées, ainsi que le cadre expérimental mis en place.
+\textcolor{gray}{Vous devez justifier chacune de vos décisions : pourquoi avez-vous opté pour une telle approche plutôt qu'une autre ? Quels sont les avantages de cette méthode par rapport aux alternatives disponibles ? Cette section permet également de présenter les critères de sélection des outils, les méthodes d'analyse utilisées, ainsi que le cadre expérimental mis en place.}

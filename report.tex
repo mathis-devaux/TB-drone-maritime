@@ -11,9 +11,6 @@
 %% Packages supplémentaires si besoin
 \usepackage{lipsum} % Générer du texte de remplissage pour les exemples
 \usepackage{parcolumns} % Si besoin de gérer des colonnes parallèles
-\usepackage{tikzducks} % Utile pour générer des images temporaires
-\usepackage{chemfig} % Si besoin d'insérer des formules chimiques
-\usepackage[version=4]{mhchem} % Si besoin d'insérer des formules chimiques
 \usepackage[
   nooldvoltagedirection,
   european,
@@ -43,7 +40,6 @@
 
 \surroundwithmdframed{minted}
 
-% Utilisé par la nomenclature
 \renewcommand\nomgroup[1]{%
   \item[\bfseries
               \ifstrequal{#1}{A}{Constantes physiques}{%
@@ -54,7 +50,7 @@
 \newcommand{\nomunit}[1]{%
   \renewcommand{\nomentryend}{\hspace*{\fill}#1}}
 
-
+  
 %% Début du document
 \begin{document}
 

@@ -35,7 +35,7 @@
 
 
 - Extrait de code dans du texte :
-\mintinline{latex}{\fig[short=Légende courte]{Légende longue}{fichier}}.
+\mintinline{latex}{Ca c'est du code}
 
 
 - Extrait de code dans du texte, encadré :
@@ -57,7 +57,7 @@ print("Hello, world!")
 - Utilisation d'un acronyme : \newacronym{gcd}{GCD}{Greatest Common Divisor}
 \acrlong{} = Greatest Common Divisor
 \acrshort{} = GCD
-\acrfull{} = Least Common Multiple (LCM)
+\acrfull{} = Greatest Common Divisor (GCD)
 
 
 - Utilisation d'un mot du glossaire :
